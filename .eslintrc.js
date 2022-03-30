@@ -1,22 +1,30 @@
-/* eslint-disable unicorn/prefer-module */
 module.exports = {
-  // plugins: ['cypress'],
-  // extends: ['plugin:cypress/recommended', 'thechatshop-typescript-prettier/with-react'],
-  // overrides: [
-  // 	{
-  // 		files: ['cypress/**/*'],
-  // 		rules: {
-  // 			'import/no-extraneous-dependencies': [
-  // 				'error',
-  // 				{
-  // 					devDependencies: true,
-  // 				},
-  // 			],
-  // 		},
-  // 	},
-  // ],
-  ignorePatterns: ['build', 'coverage', 'dist'],
-  rules: {
-    // your overrides
-  },
+    env: {
+        browser: true,
+        es2021: true,
+        jest: true,
+    },
+    extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+    },
+    plugins: ['react', '@typescript-eslint', 'prettier'],
+    rules: {
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'object-curly-spacing': 'off',
+        'capitalized-comments': 'off',
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+                tabWidth: 4,
+            },
+        ],
+    },
 };
