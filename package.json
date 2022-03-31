@@ -76,7 +76,6 @@
         "node-sass": "^7.0.1",
         "postcss": "^8.4.12",
         "prettier": "^2.6.1",
-        "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "rollup": "^2.70.1",
         "rollup-plugin-buble": "^0.19.8",
@@ -92,7 +91,7 @@
         "*.{js,ts,tsx}": "eslint --cache --fix"
     },
     "peerDependencies": {
-        "babel-loader": "8.1.0",
-        "react": ">=16.x.x"
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     }
 }

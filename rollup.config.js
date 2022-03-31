@@ -18,7 +18,7 @@ const config = {
             format: 'es',
         },
     ],
-    external: [...Object.keys(pkg.peerDependencies || {})],
+    external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
 
     plugins: [
         nodeResolve(),
