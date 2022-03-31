@@ -52,7 +52,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: 🔨 Build package
-        run: yarn minify
+        run: yarn build
 
       - name: 🚀 Publish to NPM
         run: npm publish

@@ -26,12 +26,8 @@ const config = {
         typescript({
             typescript: require('typescript'),
         }),
+        uglify.uglify({}, minify),
     ],
 };
-
-// Minified JS Build
-if (process.env.BUILD === 'minify') {
-    config.plugins.push(uglify.uglify({}, minify));
-}
 
 export default config;
