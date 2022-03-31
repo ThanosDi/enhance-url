@@ -43,6 +43,9 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Add .npmrc
+        run: echo ${{ secrets.NPM_TOKEN }}
+
+      - name: Add .npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: 📥 Download deps

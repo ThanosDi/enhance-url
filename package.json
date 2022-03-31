@@ -31,16 +31,8 @@
         "@material-ui/system": "^4.12.1",
         "@mui/icons-material": "^5.5.1",
         "@mui/material": "^5.5.2",
-        "@testing-library/jest-dom": "^5.16.3",
-        "@testing-library/react": "^12.1.4",
-        "@testing-library/user-event": "^13.5.0",
-        "@types/jest": "^27.4.1",
-        "@types/node": "^16.11.26",
-        "@types/react": "^17.0.43",
-        "@types/react-dom": "^17.0.14",
         "react-iframe": "^1.8.0",
         "react-scripts": "5.0.0",
-        "typescript": "^4.6.3",
         "web-vitals": "^2.1.4"
     },
     "eslintConfig": {
@@ -62,6 +54,14 @@
         ]
     },
     "devDependencies": {
+        "typescript": "^4.6.3",
+        "@testing-library/jest-dom": "^5.16.3",
+        "@testing-library/react": "^12.1.4",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.4.1",
+        "@types/node": "^16.11.26",
+        "@types/react": "^17.0.43",
+        "@types/react-dom": "^17.0.14",
         "@rollup/plugin-commonjs": "^21.0.3",
         "@rollup/plugin-node-resolve": "^13.1.3",
         "@typescript-eslint/eslint-plugin": "^5.16.0",
@@ -92,6 +92,7 @@
         "*.{js,ts,tsx}": "eslint --cache --fix"
     },
     "peerDependencies": {
-        "react": ">=16.x.x"
+        "react": ">=16.x.x",
+        "babel-loader": "8.1.0"
     }
 }
