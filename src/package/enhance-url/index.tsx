@@ -33,7 +33,6 @@ const EnhanceUrl = ({
     const handleCloseDialog = () => {
         setOpenDialog(false);
     };
-    console.log('win');
 
     return (
         <ClickAwayListener onClickAway={handleClose}>
